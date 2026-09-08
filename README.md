@@ -4,7 +4,6 @@
 
 GitHub Action that output the next version for major, minor, and patch version based on the given semver version.
 
-![Example output showing this action in action](images/output.png)
 
 ## Options
 
@@ -60,7 +59,7 @@ name: Generate
 jobs:
   generate:
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: 'Get Previous tag'
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
@@ -68,7 +67,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: 'Get next minor version'
         id: semvers
-        uses: "WyriHaximus/github-action-next-semvers@v1"
+        uses: "step-security/github-action-next-semvers@v1"
         with:
           version: ${{ steps.previoustag.outputs.tag }}
       - name: 'Create new milestone'
