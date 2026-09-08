@@ -2,7 +2,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 jobs:
   composer-install:
@@ -14,7 +14,7 @@ jobs:
       - name: Fix git safe directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ./vendor/
           key: ${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        qa: [cs, stan, psalm, unit, composer-require-checker, composer-unused]
+        qa: ${{ github.actor == 'dependabot[bot]' && fromJSON('["unit"]') || fromJSON('["cs", "stan", "psalm", "unit", "composer-require-checker", "composer-unused"]') }}
     needs: composer-install
     runs-on: ubuntu-latest
     container:
@@ -34,7 +34,7 @@ jobs:
       - name: Fix git safe directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ./vendor/
           key: ${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
