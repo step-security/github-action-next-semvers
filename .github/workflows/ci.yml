@@ -11,6 +11,8 @@ jobs:
       image: wyrihaximusnet/php:8.2-nts-alpine-slim-dev-root
     steps:
       - uses: actions/checkout@v7
+      - name: Fix git safe directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
         uses: actions/cache@v5
         with:
@@ -29,6 +31,8 @@ jobs:
       image: wyrihaximusnet/php:8.2-nts-alpine-slim-dev-root
     steps:
       - uses: actions/checkout@v7
+      - name: Fix git safe directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
         uses: actions/cache@v5
         with:
