@@ -26,4 +26,4 @@ outputs:
     description: 'Next Patch Version (prefixed with v)'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/step-security/github-action-next-semvers:v1.2.1@sha256:e743c065ab5887ee8cba603732af036bd670e65102ce5083ed0d3e3d89ef4808' # v1.2.1
