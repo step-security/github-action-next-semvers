@@ -1,0 +1,127 @@
+[[IgnoredVulns]]
+id = "GHSA-47f6-5gq3-vx9c"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-499r-g7pc-vmp9"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-59pp-r3rg-353g"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-7c6p-848j-wh5h"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-f9f8-rm49-7jv2"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-g6xq-892h-64w3"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-gjfg-22fp-rrxx"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-gqw4-4w2p-838q"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-jm6m-4632-36hf"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-rvx4-ffvw-m9q3"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-v9qv-c7wm-wgmf"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-wg36-wvj6-r67p"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-94pj-82f3-465w"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-cwxw-98qj-8qjx"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-f283-ghqc-fg79"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-f7vp-7xgx-4w4r"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-g446-98w2-8p5w"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-h95v-h523-3mw8"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-v5mv-p594-2x33"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-wm3w-8rrp-j577"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-wpwq-4j6v-78m3"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-34xg-wgjx-8xph"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-c2w2-prh8-qm98"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-hq7v-mx3g-29hw"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-vm85-hxw5-5432"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-wxmh-65f7-jcvw"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-vvj3-c3rp-c85p"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-hmqg-cxww-wqhq"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-qq5c-677p-737q"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-4qpc-3hr4-r2p4"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-9frc-8383-795m"
+reason = "Dev dependency only, not used in production"
+
+[[IgnoredVulns]]
+id = "GHSA-c2p3-7m5p-cv8x"
+reason = "Dev dependency only, not used in production"
