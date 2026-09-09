@@ -10,11 +10,11 @@ jobs:
     container:
       image: wyrihaximusnet/php:8.2-nts-alpine-slim-dev-root
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Fix git safe directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ./vendor/
           key: ${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
@@ -30,11 +30,11 @@ jobs:
     container:
       image: wyrihaximusnet/php:8.2-nts-alpine-slim-dev-root
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Fix git safe directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Cache composer packages
-        uses: actions/cache@v6
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ./vendor/
           key: ${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
@@ -49,7 +49,12 @@ jobs:
       - qa
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: 'Get Previous tag'
         id: semvers
         uses: ./
