@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WyriHaximus\Github\Actions\NextSemVers;
+namespace StepSecurity\Github\Actions\NextSemVers;
 
 use Version\Exception\InvalidVersionString;
 use Version\Version;

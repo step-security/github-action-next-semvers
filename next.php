@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use WyriHaximus\Github\Actions\NextSemVers\Next;
+use StepSecurity\Github\Actions\NextSemVers\Next;
 
 require __DIR__ . \DIRECTORY_SEPARATOR . 'vendor' . \DIRECTORY_SEPARATOR . 'autoload.php';
 

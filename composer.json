@@ -12,12 +12,12 @@
   },
   "autoload": {
     "psr-4": {
-      "WyriHaximus\\Github\\Actions\\NextSemVers\\": "src/"
+      "StepSecurity\\Github\\Actions\\NextSemVers\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "WyriHaximus\\Tests\\Github\\Actions\\NextSemVers\\": "tests/"
+      "StepSecurity\\Tests\\Github\\Actions\\NextSemVers\\": "tests/"
     }
   },
   "config": {

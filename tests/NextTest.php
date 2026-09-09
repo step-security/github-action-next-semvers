@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace WyriHaximus\Tests\Github\Actions\NextSemVers;
+namespace StepSecurity\Tests\Github\Actions\NextSemVers;
 
 use Version\Exception\InvalidVersionString;
-use WyriHaximus\Github\Actions\NextSemVers\Next;
+use StepSecurity\Github\Actions\NextSemVers\Next;
 use WyriHaximus\TestUtilities\TestCase;
 
 /**
